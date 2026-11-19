@@ -1,0 +1,10 @@
+# Linguagem principal: Apache Configuration
+.htaccess linguist-language=ApacheConf
+.htaccess linguist-detectable=true
+
+# Testes Python não entram nas estatísticas
+tests/** linguist-detectable=false
+
+# Documentação
+docs/** linguist-documentation
+*.md linguist-documentation
