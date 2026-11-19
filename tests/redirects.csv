@@ -1,0 +1,12 @@
+source_path,expected_location
+/ype/,https://hhdigital.com.br/clientes/ype/
+/clientes/ype/,https://ypecomunicacao.com.br/
+/clientes/ype/noticiasdasemana,https://ypecomunicacao.com.br/noticiasdasemana/
+/ype/noticiasdasemana/2023/111/index.html,https://ypecomunicacao.com.br/noticiasdasemana/2023/111/index.html
+/clientes/ype/noticiasdasemana/2024/222/222.html,https://ypecomunicacao.com.br/noticiasdasemana/2024/222/222.html
+/clientes/ype/noticiasdasemana/2025/333/images/index_01.jpg,https://ypecomunicacao.com.br/noticiasdasemana/2025/333/images/index_01.jpg
+/clientes/ype/noticiasdasemana/2026/0801/index.html,https://ypecomunicacao.com.br/noticiasdasemana/2026/0801/index.html
+/clientes/ype/noticiasdasemana/2026/528/528.html,https://ypecomunicacao.com.br/noticiasdasemana/2026/528/528.html
+/ype/noticiasdasemana/2026/529/529.html,https://ypecomunicacao.com.br/noticiasdasemana/2026/529/529.html
+/clientes/ype/noticiasdasemana/2026/530/530.html,https://ypecomunicacao.com.br/noticiasdasemana/2026/530/530.html
+/ype/noticiasdasemana/2027/123/style.css,https://ypecomunicacao.com.br/noticiasdasemana/2027/123/style.css
