@@ -1,0 +1,34 @@
+# ============================================================
+# HappyHouse | Ype News Redirect
+# ============================================================
+# Descricao : Redirecionamentos de newsletters e recursos Ype
+# Autor     : Fabio Castilhos <fabio.castilhos@happy.net.br>
+# Versao    : 1.4.2
+# Data      : 18/11/2026
+# Instalacao: /www/.htaccess (se /www for o DocumentRoot)
+# ============================================================
+# IMPORTANTE:
+# Mesclar estas regras ao .htaccess existente, se houver.
+# Manter antes de regras genericas de roteamento.
+# Nao ha excecoes fixas por ano ou edicao.
+# ============================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Raiz /ype/: manter encaminhamento historico.
+    RewriteRule ^ype/?$ /clientes/ype/ [R=301,L]
+
+    # 2. Conversao opcional de index.html para arquivo numerado.
+    # ATENCAO: habilitar somente apos comprovar que todas as edicoes
+    # abrangidas usam <edicao>.html no destino. A ativacao global
+    # quebraria edicoes que continuam usando index.html (ex.: 0801).
+    # RewriteRule ^(?:clientes/ype|ype)/noticiasdasemana/([0-9]{4})/([0-9]+)/index\.html$ https://ypecomunicacao.com.br/noticiasdasemana/$1/$2/$2.html [R=302,L,NE]
+
+    # 3. Todas as newsletters e recursos internos, de qualquer ano.
+    # Preserva o caminho relativo (HTML, imagens, CSS e JS).
+    RewriteRule ^(?:clientes/ype|ype)/noticiasdasemana(?:/(.*))?$ https://ypecomunicacao.com.br/noticiasdasemana/$1 [R=301,L,NE]
+
+    # 4. Raiz /clientes/ype/: direcionar ao novo site.
+    RewriteRule ^clientes/ype/?$ https://ypecomunicacao.com.br/ [R=301,L,NE]
+</IfModule>
